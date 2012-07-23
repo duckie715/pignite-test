@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span3"><h2>My Stupid Sidebar</h2>Here's some stuff.</div>
+			<div class="span9"><%= yield %></div>
+		</div>
+	</div>
+</body>
+</html>
